@@ -1,0 +1,149 @@
+*{
+    box-sizing:border-box
+}
+body{
+    margin:0;
+    font-family: sans-serif;
+}
+.outerbox{
+    width:100%;
+    border-top: 3px solid #BFBFBF;
+    background-color: #EFEFEF;
+}
+.outerbox .card-container{
+   width:75%;
+   float: left;
+   overflow: hidden;
+}
+.outerbox .card-container ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+.outerbox .card-container ul li{
+    width:33.33%;
+    float:left;
+    height:27vh;
+    text-align:center;
+    line-height: 27vh;
+    color: #FFFFFF;
+    font-size: 10vh;
+}
+.outerbox .button-container{
+    width:25%;
+    float: right;;  
+    overflow: hidden;
+}
+.title{
+    width:100%;
+    text-align: center;
+    height:5vh;
+    font-size: 3vh;
+    line-height: 5vh;
+}
+.color1{
+    background-color: #2B8EAD;
+}
+.color2{
+    background-color: #72c3dc;
+}
+.color3{
+    background-color: #2f454e;
+}
+.color4{
+    background-color: #BFBFBF;
+}
+.footer{
+    width:100%;
+    text-align: center;
+    clear: both;
+    height:10vh;
+    line-height: 10vh;
+    font-style: italic;
+}
+.button-wrapper{
+   margin:3vw;
+}
+.btn{
+    cursor: pointer;
+    width:100%;
+    margin-bottom: 5vh;
+    background-color: #72c3dc;
+    color: #FFFFFF;
+    border:none;
+    height:8vh;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.3rem #2B8EAD;
+    outline: none;
+}
+.btn:active {
+    box-shadow: 0 0.1rem #2f454e;
+    transform: translateY(0.2rem);
+}
+
+@media screen and (max-width:959px){
+    .outerbox{
+        width:100%;
+        background-color: #FFFFFF;
+        border: none;
+    }
+    .title{
+        background-color: #333333;
+        color: #FFFFFF;
+        height: 7vh;
+        line-height: 7vh;
+    }
+    .outerbox .card-container ul li{
+        width:100%;
+        height:8vh;
+        color: #000000;
+        font-size: 4vh;
+        line-height: 8vh;
+        background-color: #EFEFEF;
+        margin-bottom: 1vh;
+        border-left: 2.5vw solid;
+        padding-right: 2vw;
+    }
+    .main-wrapper {
+        border:10px solid black;
+        border-radius: 5px;
+        min-width: 300px;
+    }
+    .outerbox .button-container{
+        width:100%;
+    }
+    .outerbox .card-container{
+        width:100%;
+        padding: 0 5vw;
+    }
+    .outerbox .card-container ul .color1{
+        border-color: #2B8EAD;
+    }
+    .outerbox .card-container ul .color2{
+        border-color: #72c3dc;
+    }
+    .outerbox .card-container ul .color3{
+        border-color: #2f454e;
+    }
+    .outerbox .card-container ul .color4{
+        border-color: #BFBFBF;
+    }
+    .btn{
+        width:23vw;
+        margin-bottom: 0;
+    }
+    .button-wrapper{
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        width:48vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .outerbox .button-container{
+        background-color: #FFFFFF;
+    }
+    .footer{
+        height:6vh;
+        line-height: 6vh;
+    }
+}
